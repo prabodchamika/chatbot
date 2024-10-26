@@ -1,0 +1,559 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you?", "Is anyone there?", "Hello", "Good day"],
+            "responses": [
+                "Hello! I'm Jarvis, your virtual assistant. How can I assist you today?",
+                "Hi there! I'm here to help you with anything you need.",
+                "Greetings! What can I do for you today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you soon! If you need anything, just ask.",
+                "Take care! I'm always here if you need help."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful"],
+            "responses": [
+                "You're welcome! I'm glad I could help.",
+                "Happy to assist! If you have more questions, feel free to ask.",
+                "No problem! I'm here whenever you need me."
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I don't understand. Could you rephrase that?",
+                "Hmm, I didn't catch that. Can you try asking in a different way?",
+                "I'm here to help, but I didn't quite get your question. Please ask again."
+            ]
+        },
+        {
+            "tag": "ai",
+            "patterns": ["What is AI?", "Tell me about artificial intelligence"],
+            "responses": [
+                "Artificial Intelligence, or AI, is a branch of computer science that aims to create machines capable of intelligent behavior. It's used in various applications, from chatbots like me to self-driving cars!"
+            ]
+        },
+        {
+            "tag": "who_are_you",
+            "patterns": ["Who are you?", "What is your name?", "Tell me about yourself"],
+            "responses": [
+                "I am Jarvis, your friendly virtual assistant created by Prabod Chamika. I'm here to help you find information and answer your questions!",
+                "I'm Jarvis, designed to assist you. My creator is Prabod Chamika, and I'm always learning to serve you better."
+            ]
+        },
+        {
+            "tag": "world_knowledge",
+            "patterns": ["Tell me about the world", "What are some world facts?", "Interesting facts about the world"],
+            "responses": [
+                "The Earth is about 4.5 billion years old, and it rotates on its axis once every 24 hours.",
+                "Did you know that the Amazon Rainforest produces more than 20% of the world's oxygen?"
+            ]
+        },
+        {
+            "tag": "coding_history",
+            "patterns": ["What is the history of coding?", "Tell me about programming languages", "How did coding start?"],
+            "responses": [
+                "The first programming language was called 'Fortran', created in the 1950s for scientific computing.",
+                "Ada Lovelace is often considered the first computer programmer for her work on Charles Babbage's early mechanical general-purpose computer."
+            ]
+        },
+        {
+            "tag": "famous_scientists",
+            "patterns": ["Who are some famous scientists?", "Tell me about Albert Einstein", "Who is Marie Curie?"],
+            "responses": [
+                "Albert Einstein was a theoretical physicist known for the theory of relativity, which revolutionized our understanding of space and time.",
+                "Marie Curie was a physicist and chemist who conducted pioneering research on radioactivity and was the first woman to win a Nobel Prize."
+            ]
+        },
+        {
+            "tag": "world_wars",
+            "patterns": ["What were the world wars?", "Tell me about World War I", "What caused World War II?"],
+            "responses": [
+                "World War I lasted from 1914 to 1918 and involved many of the world's great powers. It was triggered by the assassination of Archduke Franz Ferdinand.",
+                "World War II, which lasted from 1939 to 1945, was primarily caused by the rise of fascism in Europe and the aggression of Nazi Germany."
+            ]
+        },
+        {
+            "tag": "coding_languages",
+            "patterns": ["What are the popular programming languages?", "Tell me about Python", "What is Java used for?"],
+            "responses": [
+                "Some popular programming languages include Python, Java, JavaScript, C++, and Ruby. Each has its own use cases and strengths.",
+                "Python is known for its readability and is widely used in web development, data science, and automation."
+            ]
+        },
+        {
+            "tag": "space_exploration",
+            "patterns": ["What is space exploration?", "Tell me about Mars missions", "What did we learn from the moon landing?"],
+            "responses": [
+                "Space exploration involves the use of astronomy and space technologies to explore outer space. The first successful manned moon landing was Apollo 11 in 1969.",
+                "Mars missions aim to discover the planet's potential for past or present life. NASA's Perseverance rover is currently exploring Mars."
+            ]
+        },
+        {
+            "tag": "environment",
+            "patterns": ["How can we protect the environment?", "What is climate change?", "Tell me about renewable energy"],
+            "responses": [
+                "Protecting the environment involves reducing waste, conserving energy, and supporting sustainable practices.",
+                "Climate change refers to long-term changes in temperature and weather patterns, primarily due to human activities such as burning fossil fuels."
+            ]
+        },
+        {
+            "tag": "history",
+            "patterns": ["Tell me about ancient civilizations", "What was the Renaissance?", "Who were the Egyptians?"],
+            "responses": [
+                "Ancient civilizations include the Egyptians, Greeks, and Romans, each known for their contributions to culture, governance, and science.",
+                "The Renaissance was a period of cultural revival in Europe from the 14th to the 17th century, marked by advancements in art, literature, and science."
+            ]
+        },
+        {
+            "tag": "inventions",
+            "patterns": ["What are some important inventions?", "Tell me about the wheel", "Who invented the telephone?"],
+            "responses": [
+                "The wheel is one of humanity's oldest inventions, dating back to around 3500 BC in Mesopotamia.",
+                "Alexander Graham Bell is credited with inventing the telephone in 1876, which revolutionized communication."
+            ]
+        },
+        {
+            "tag": "literature",
+            "patterns": ["Who are some famous authors?", "Tell me about Shakespeare", "What is classic literature?"],
+            "responses": [
+                "William Shakespeare is often regarded as one of the greatest playwrights and poets in the English language, known for works like 'Hamlet' and 'Romeo and Juliet.'",
+                "Classic literature refers to timeless literary works that have had a significant impact on culture and society, such as Homer's 'Iliad' and 'Odyssey.'"
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": ["What is the latest technology?", "Tell me about artificial intelligence", "What are the advancements in robotics?"],
+            "responses": [
+                "Recent advancements in technology include AI, machine learning, and quantum computing, which are shaping various industries.",
+                "Robotics has seen significant progress with the development of autonomous systems used in manufacturing, healthcare, and exploration."
+            ]
+        },
+        {
+            "tag": "mathematics",
+            "patterns": ["What is calculus?", "Tell me about geometry", "Who is Euclid?"],
+            "responses": [
+                "Calculus is a branch of mathematics focused on limits, functions, derivatives, and integrals, which helps in understanding changes.",
+                "Euclid was a Greek mathematician known as the 'Father of Geometry' for his work in the field, especially his book 'Elements.'"
+            ]
+        },
+        {
+            "tag": "geography",
+            "patterns": ["What are the continents?", "Tell me about the Nile River", "Where is Mount Everest?"],
+            "responses": [
+                "There are seven continents: Africa, Antarctica, Asia, Europe, North America, Australia, and South America.",
+                "The Nile River is one of the longest rivers in the world, flowing through northeastern Africa and known for its historical significance."
+            ]
+        },
+        {
+            "tag": "art",
+            "patterns": ["What is modern art?", "Tell me about famous painters", "Who is Vincent van Gogh?"],
+            "responses": [
+                "Modern art refers to artistic works produced during the late 19th and 20th centuries, characterized by a break from tradition.",
+                "Vincent van Gogh was a Dutch post-impressionist painter known for his vivid colors and emotional depth, particularly in works like 'Starry Night.'"
+            ]
+        },
+        {
+            "tag": "philosophy",
+            "patterns": ["What is philosophy?", "Tell me about Socrates", "What is existentialism?"],
+            "responses": [
+                "Philosophy is the study of fundamental questions regarding existence, knowledge, values, and reason.",
+                "Socrates was an ancient Greek philosopher who is considered one of the founders of Western philosophy, known for his method of questioning."
+            ]
+        },
+        {
+            "tag": "health",
+            "patterns": ["How to stay healthy?", "What is a balanced diet?", "Tell me about mental health"],
+            "responses": [
+                "Staying healthy involves regular exercise, a balanced diet, adequate sleep, and managing stress.",
+                "Mental health refers to emotional, psychological, and social well-being, affecting how we think, feel, and act."
+            ]
+        },
+        {
+            "tag": "travel",
+            "patterns": ["What are the best travel destinations?", "Tell me about Paris", "Where should I travel?"],
+            "responses": [
+                "Some popular travel destinations include Paris, Tokyo, New York City, and Rome, each offering unique experiences.",
+                "Paris, known as the 'City of Light,' is famous for its art, fashion, and iconic landmarks like the Eiffel Tower and Louvre Museum."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": ["What are the popular sports?", "Tell me about soccer", "Who won the last World Cup?"],
+            "responses": [
+                "Popular sports include soccer, basketball, cricket, and tennis, each enjoyed by millions around the world.",
+                "The last FIFA World Cup was held in 2022, and Argentina won the tournament, claiming their third title."
+            ]
+        },
+        {
+            "tag": "music",
+            "patterns": ["What is your favorite music?", "Tell me about Beethoven", "Who are some famous musicians?"],
+            "responses": [
+                "Ludwig van Beethoven was a German composer and pianist, known for his symphonies and sonatas that have influenced classical music.",
+                "Some famous musicians include Mozart, Elvis Presley, The Beatles, and Beyoncé, each leaving a significant mark on music history."
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": ["What are some popular dishes?", "Tell me about Italian cuisine", "What is sushi?"],
+            "responses": [
+                "Popular dishes around the world include pizza, sushi, tacos, and curry, each reflecting cultural diversity.",
+                "Sushi is a Japanese dish typically made with vinegared rice, seafood, and vegetables, often served raw."
+            ]
+        },
+        {
+            "tag": "mythology",
+            "patterns": ["Tell me about Greek mythology", "Who is Zeus?", "What are Norse gods?"],
+            "responses": [
+                "Greek mythology is a collection of stories about gods, goddesses, and heroes, explaining the origins of the world and human life.",
+                "Zeus is the king of the gods in Greek mythology, known for his power over the sky and thunder."
+            ]
+        },
+        {
+            "tag": "current_events",
+            "patterns": ["What is happening in the world?", "Tell me about recent news", "What are current events?"],
+            "responses": [
+                "Current events refer to ongoing news and happenings around the globe, including politics, sports, and cultural developments.",
+                "For the latest news, it's best to check reliable news sources or platforms that provide real-time updates."
+            ]
+        },
+        {
+            "tag": "psychology",
+            "patterns": ["What is psychology?", "Tell me about Freud", "What is cognitive behavioral therapy?"],
+            "responses": [
+                "Psychology is the scientific study of mind and behavior, exploring how individuals think, feel, and act.",
+                "Sigmund Freud is known as the father of psychoanalysis, introducing concepts such as the unconscious mind and defense mechanisms."
+            ]
+        },
+        {
+            "tag": "economics",
+            "patterns": ["What is economics?", "Tell me about supply and demand", "What is inflation?"],
+            "responses": [
+                "Economics is the study of how societies allocate scarce resources and the behavior of individuals and institutions.",
+                "Supply and demand are fundamental concepts in economics, where the price of a good is determined by its availability and consumers' desire for it."
+            ]
+        },
+        {
+            "tag": "architecture",
+            "patterns": ["What is architecture?", "Tell me about Gothic architecture", "Who designed the Eiffel Tower?"],
+            "responses": [
+                "Architecture is the art and science of designing buildings and structures, combining aesthetics with functionality.",
+                "Gothic architecture is characterized by pointed arches, ribbed vaults, and flying buttresses, prominent in cathedrals like Notre-Dame."
+            ]
+        },
+        {
+            "tag": "finance",
+            "patterns": ["What is personal finance?", "How to save money?", "What is investment?"],
+            "responses": [
+                "Personal finance involves managing your money, budgeting, saving, and investing to achieve financial goals.",
+                "Investment refers to allocating resources, usually money, with the expectation of generating an income or profit."
+            ]
+        },
+        {
+            "tag": "legal",
+            "patterns": ["What is law?", "Tell me about contracts", "What are rights?"],
+            "responses": [
+                "Law is a system of rules that a society or government develops to regulate behavior and maintain order.",
+                "Contracts are legally binding agreements between parties, outlining specific terms and conditions."
+            ]
+        },
+        {
+            "tag": "education",
+            "patterns": ["What is the importance of education?", "Tell me about online learning", "How to study effectively?"],
+            "responses": [
+                "Education is crucial for personal development, career opportunities, and informed citizenship.",
+                "Online learning has become popular, offering flexible education options through platforms like Coursera and edX."
+            ]
+        },
+        {
+            "tag": "sustainability",
+            "patterns": ["What is sustainability?", "How to live sustainably?", "Tell me about green energy"],
+            "responses": [
+                "Sustainability refers to meeting present needs without compromising the ability of future generations to meet theirs.",
+                "Green energy sources like solar, wind, and hydroelectric power are vital for reducing our carbon footprint and combating climate change."
+            ]
+        },
+        {
+            "tag": "social_media",
+            "patterns": ["What are the popular social media platforms?", "Tell me about Facebook", "How to use Twitter?"],
+            "responses": [
+                "Popular social media platforms include Facebook, Twitter, Instagram, and TikTok, each with unique features and audiences.",
+                "Facebook allows users to connect with friends, share updates, and join groups, while Twitter is known for its short, real-time posts."
+            ]
+        },
+        {
+            "tag": "fashion",
+            "patterns": ["What are the latest fashion trends?", "Tell me about haute couture", "Who are famous fashion designers?"],
+            "responses": [
+                "Fashion trends change seasonally, with current styles reflecting sustainability and inclusivity.",
+                "Famous fashion designers include Coco Chanel, Giorgio Armani, and Alexander McQueen, known for their impactful contributions to the industry."
+            ]
+        },
+        {
+            "tag": "cryptocurrency",
+            "patterns": ["What is cryptocurrency?", "Tell me about Bitcoin", "How to invest in crypto?"],
+            "responses": [
+                "Cryptocurrency is a digital or virtual currency that uses cryptography for security. Bitcoin, created in 2009, is the first and most well-known cryptocurrency.",
+                "Investing in cryptocurrency involves buying coins or tokens through exchanges, but it's important to research and understand the risks."
+            ]
+        },
+        {
+            "tag": "transportation",
+            "patterns": ["What are the types of transportation?", "Tell me about electric vehicles", "What is public transport?"],
+            "responses": [
+                "Types of transportation include land (cars, trains), air (planes), and water (ships, ferries).",
+                "Electric vehicles (EVs) use electricity as a power source, reducing reliance on fossil fuels and minimizing environmental impact."
+            ]
+        },
+        {
+            "tag": "parenting",
+            "patterns": ["What are tips for new parents?", "How to raise a child?", "Tell me about child development"],
+            "responses": [
+                "New parents should focus on building a routine, ensuring safety, and providing love and support for their child.",
+                "Child development involves the physical, emotional, social, and cognitive growth of a child from infancy to adulthood."
+            ]
+        },
+        {
+            "tag": "self_improvement",
+            "patterns": ["How to improve myself?", "What are self-help techniques?", "Tell me about mindfulness"],
+            "responses": [
+                "Self-improvement involves setting goals, acquiring new skills, and fostering a positive mindset.",
+                "Mindfulness is the practice of being present in the moment, which can help reduce stress and improve mental well-being."
+            ]
+        },
+        {
+            "tag": "environmental_issues",
+            "patterns": ["What are the major environmental issues?", "Tell me about deforestation", "What is pollution?"],
+            "responses": [
+                "Major environmental issues include climate change, deforestation, pollution, and loss of biodiversity.",
+                "Pollution refers to the introduction of harmful substances into the environment, affecting air, water, and soil quality."
+            ]
+        },
+        {
+            "tag": "leadership",
+            "patterns": ["What makes a good leader?", "Tell me about leadership styles", "How to be an effective leader?"],
+            "responses": [
+                "A good leader inspires and motivates others, communicates effectively, and leads by example.",
+                "Different leadership styles include transformational, transactional, and servant leadership, each with unique characteristics."
+            ]
+        },
+        {
+            "tag": "artificial_intelligence",
+            "patterns": ["What is machine learning?", "How does AI work?", "What are neural networks?"],
+            "responses": [
+                "Machine learning is a subset of AI that enables computers to learn from data and improve over time without being explicitly programmed.",
+                "Neural networks are computing systems inspired by the human brain, used in AI to recognize patterns and make decisions."
+            ]
+        },
+        {
+            "tag": "coding",
+            "patterns": ["What is programming?", "How to learn to code?", "Tell me about Python"],
+            "responses": [
+                "Programming is the process of designing and building executable computer software to accomplish a specific task.",
+                "Python is a versatile programming language known for its readability and simplicity, making it popular for beginners."
+            ]
+        },
+        {
+            "tag": "history",
+            "patterns": ["What are major historical events?", "Tell me about World War II", "Who was Cleopatra?"],
+            "responses": [
+                "Major historical events include the fall of the Berlin Wall, World War II, and the civil rights movement.",
+                "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt, known for her intelligence and political acumen."
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": ["What is the latest technology?", "Tell me about the internet", "What are wearable devices?"],
+            "responses": [
+                "The latest technology includes advancements in artificial intelligence, 5G connectivity, and quantum computing.",
+                "Wearable devices, such as smartwatches and fitness trackers, are electronics worn on the body to monitor health and activity."
+            ]
+        },
+        {
+            "tag": "literature",
+            "patterns": ["What are the classic novels?", "Tell me about Shakespeare", "What is poetry?"],
+            "responses": [
+                "Classic novels include 'Pride and Prejudice,' '1984,' and 'Moby Dick,' each offering profound insights into human nature.",
+                "Poetry is a literary form that uses aesthetic and rhythmic qualities of language to evoke emotions and convey ideas."
+            ]
+        },
+        {
+            "tag": "philosophy",
+            "patterns": ["What is philosophy?", "Tell me about existentialism", "Who was Socrates?"],
+            "responses": [
+                "Philosophy is the study of fundamental questions regarding existence, knowledge, values, reason, and reality.",
+                "Socrates was a classical Greek philosopher credited as one of the founders of Western philosophy, known for his Socratic method."
+            ]
+        },
+        {
+            "tag": "gaming",
+            "patterns": ["What are popular video games?", "Tell me about esports", "What is game development?"],
+            "responses": [
+                "Popular video games include 'Fortnite,' 'Minecraft,' and 'The Legend of Zelda,' enjoyed by millions worldwide.",
+                "Esports refers to competitive video gaming, often organized in tournaments with professional players and teams."
+            ]
+        },
+        {
+            "tag": "climate_change",
+            "patterns": ["What causes climate change?", "How to reduce carbon footprint?", "Tell me about global warming"],
+            "responses": [
+                "Climate change is primarily caused by human activities, such as burning fossil fuels and deforestation.",
+                "Reducing your carbon footprint can be achieved through energy conservation, using public transport, and supporting sustainable practices."
+            ]
+        },
+        {
+            "tag": "internet_culture",
+            "patterns": ["What is meme culture?", "Tell me about influencers", "What is online activism?"],
+            "responses": [
+                "Meme culture refers to the way memes spread and evolve within internet communities, often reflecting social commentary.",
+                "Online influencers use social media platforms to impact their followers' opinions and behaviors, often in marketing."
+            ]
+        },
+        {
+            "tag": "marketing",
+            "patterns": ["What is digital marketing?", "How to promote a product?", "What are marketing strategies?"],
+            "responses": [
+                "Digital marketing uses online platforms and technologies to promote products and services.",
+                "Effective marketing strategies include social media marketing, content marketing, and search engine optimization (SEO)."
+            ]
+        },
+        {
+            "tag": "healthcare",
+            "patterns": ["What is public health?", "Tell me about healthcare systems", "How to access healthcare?"],
+            "responses": [
+                "Public health focuses on protecting and improving the health of communities through education, policy, and research.",
+                "Healthcare systems vary worldwide, with different models of funding and service delivery, including public and private options."
+            ]
+        },
+        {
+            "tag": "science",
+            "patterns": ["What are the branches of science?", "Tell me about physics", "What is the scientific method?"],
+            "responses": [
+                "Branches of science include physics, chemistry, biology, and earth science, each studying different aspects of the natural world.",
+                "The scientific method is a systematic approach to inquiry involving observation, hypothesis formation, experimentation, and conclusion."
+            ]
+        },
+        {
+            "tag": "human_rights",
+            "patterns": ["What are human rights?", "Tell me about the Universal Declaration of Human Rights", "How to advocate for human rights?"],
+            "responses": [
+                "Human rights are basic rights and freedoms that belong to every person, regardless of nationality or background.",
+                "The Universal Declaration of Human Rights, adopted by the UN in 1948, outlines fundamental human rights to be universally protected."
+            ]
+        },
+        {
+            "tag": "cooking",
+            "patterns": ["What are some easy recipes?", "Tell me about baking", "How to cook pasta?"],
+            "responses": [
+                "Easy recipes include pasta dishes, stir-fries, and salads, perfect for beginners.",
+                "Baking involves cooking food using dry heat in an oven, commonly used for bread, pastries, and cakes."
+            ]
+        },
+        {
+            "tag": "pets",
+            "patterns": ["What are the best pets?", "How to care for a dog?", "Tell me about exotic pets"],
+            "responses": [
+                "Popular pets include dogs, cats, and fish, each requiring specific care and attention.",
+                "Exotic pets like reptiles, birds, and small mammals can be fascinating companions but often need specialized care."
+            ]
+        },
+        {
+            "tag": "relationships",
+            "patterns": ["How to maintain a healthy relationship?", "What are red flags in a relationship?", "How to communicate effectively?"],
+            "responses": [
+                "Maintaining a healthy relationship involves open communication, trust, and mutual respect.",
+                "Red flags in a relationship can include manipulation, lack of trust, and constant criticism."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": ["What are major global events?", "Tell me about the Olympics", "What is the significance of Earth Day?"],
+            "responses": [
+                "Major global events include the Olympics, World Cup, and Earth Day, each promoting unity and awareness.",
+                "Earth Day, celebrated on April 22, raises awareness about environmental protection and sustainability."
+            ]
+        },
+        {
+            "tag": "home_improvement",
+            "patterns": ["What are DIY home projects?", "How to renovate a room?", "What are tips for home organization?"],
+            "responses": [
+                "DIY home projects can include painting, gardening, and furniture restoration.",
+                "Tips for home organization include decluttering, using storage solutions, and creating designated spaces for items."
+            ]
+        },
+        {
+            "tag": "nutrition",
+            "patterns": ["What are superfoods?", "How to read nutrition labels?", "What is a healthy diet?"],
+            "responses": [
+                "Superfoods are nutrient-rich foods beneficial for health, like blueberries, quinoa, and spinach.",
+                "A healthy diet includes a variety of fruits, vegetables, whole grains, and lean proteins."
+            ]
+        },
+        {
+            "tag": "investing",
+            "patterns": ["How to start investing?", "What is the stock market?", "What are mutual funds?"],
+            "responses": [
+                "Starting to invest involves setting financial goals and understanding different investment options.",
+                "The stock market is a platform for buying and selling shares of publicly traded companies."
+            ]
+        },
+        {
+            "tag": "space",
+            "patterns": ["What is the solar system?", "Tell me about black holes", "How to become an astronaut?"],
+            "responses": [
+                "The solar system consists of the Sun, planets, moons, and other celestial bodies, orbiting the Sun.",
+                "Black holes are regions in space where the gravitational pull is so strong that nothing can escape from them."
+            ]
+        },
+        {
+            "tag": "cultures",
+            "patterns": ["What are the world's cultures?", "Tell me about cultural diversity", "What is cultural heritage?"],
+            "responses": [
+                "World cultures encompass diverse customs, traditions, and practices, shaped by geography and history.",
+                "Cultural heritage includes the traditions, monuments, and artifacts passed down through generations."
+            ]
+        },
+        {
+            "tag": "sports_science",
+            "patterns": ["What is sports science?", "Tell me about sports nutrition", "How to prevent sports injuries?"],
+            "responses": [
+                "Sports science studies the physiological and psychological aspects of athletic performance.",
+                "Sports nutrition focuses on dietary practices that enhance athletic performance and recovery."
+            ]
+        },
+        {
+            "tag": "self_care",
+            "patterns": ["What is self-care?", "How to practice self-care?", "Why is self-care important?"],
+            "responses": [
+                "Self-care involves activities and practices that promote physical, mental, and emotional well-being.",
+                "Practicing self-care is crucial for stress management and maintaining a healthy work-life balance."
+            ]
+        },
+        {
+            "tag": "urban_planning",
+            "patterns": ["What is urban planning?", "How to design a city?", "What are smart cities?"],
+            "responses": [
+                "Urban planning is the process of designing and regulating land use in urban areas to promote sustainable development.",
+                "Smart cities use technology and data to improve the quality of life for residents and enhance urban services."
+            ]
+        },
+        {
+            "tag": "cryptocurrency",
+            "patterns": ["What is cryptocurrency?", "How to invest in cryptocurrency?", "What are blockchain technologies?"],
+            "responses": [
+                "Cryptocurrency is a digital or virtual currency that uses cryptography for security.",
+                "Blockchain technology is a decentralized ledger that records transactions across many computers."
+            ]
+        }
+    ]
+}

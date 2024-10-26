@@ -1,0 +1,20 @@
+{
+    "intents": [
+      {
+        "tag": "essay_help",
+        "patterns": [
+          "Can you help me write an essay?",
+          "I need assistance with my essay.",
+          "How do I start an essay?",
+          "Give me tips for writing an essay.",
+          "What should I include in my essay?"
+        ],
+        "responses": [
+          "Sure! What subject is your essay about?",
+          "I'd love to help! What topic do you want to write about?",
+          "Let’s get started! What's the essay topic?"
+        ]
+      }
+    ]
+  }
+  
